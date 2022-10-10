@@ -1,2 +1,2 @@
 # Ansible
-Learning configuration management with Ansible
+Learning Ansible for configuration management.
