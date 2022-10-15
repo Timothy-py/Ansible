@@ -10,6 +10,16 @@
                         - apache2
                         - libapache2-mod-php
                     state: latest
-                    update_cache: yes
+#                    update_cache: yes
             when: ansible_distribution == "Ubuntu"
 #           when: ansible_distribution in ["CentOS", "Ubuntu"]
+        
+          - name: install apache and php packages for CentOS
+            yum:
+                    name:
+#                        - python2-dnf
+                        - httpd
+                        - php
+                    state: latest
+#                    update_cache: yes
+            when: ansible_distribution == "CentOS"
